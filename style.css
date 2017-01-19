@@ -1,0 +1,153 @@
+/*стили для внешнего блока*/
+.wrapper{
+    width: 580px;
+    height: 180px;
+    margin: 0 auto;
+    padding: 10px 7px;
+    border-bottom: 2px solid grey;
+}
+
+/*стили для столбцов эквалайзера*/
+.bar{
+    width: 34px;
+    height: 180px;
+    background-image: url(img/bg.jpg);
+    background-repeat: repeat-y;
+    display: inline-block;
+}
+
+/*стили для заслоняющих блоков*/
+.blind{
+    background: #fff;
+    width: 34px;
+    height: 142px;
+    margin-top: 0px;
+}
+
+/*общие стили анимации для заслоняющих блоков*/
+.blind{
+    -webkit-animation-name: eq;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+}
+
+/*стили анимации для для каждого блока*/
+.b1{
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-delay: 0;
+}
+.b2{
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-delay: 0.3;
+}
+.b3{
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-delay: 0.5;
+}
+.b4{
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-delay: 0;
+}
+.b5{
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-delay: 0.1;
+}
+.b6{
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0.5;
+}
+.b7{
+    -webkit-animation-duration: 0.9s;
+    -webkit-animation-delay: 0.1;
+}
+.b8{
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-delay: 0.1;
+}
+.b9{
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-delay: 1;
+}
+.b10{
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-delay: 0.2;
+}
+.b11{
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0.3;
+}
+.b12{
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-delay: 0.1;
+}
+.b13{
+    -webkit-animation-duration: 0.9s;
+    -webkit-animation-delay: 0.4;
+}
+.b14{
+    -webkit-animation-duration: 0.7s;
+    -webkit-animation-delay: 0.8;
+}
+.b15{
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-delay: 0;
+}
+/*стили для кадров анимации*/
+@-webkit-keyframes eq{
+    0%{}
+    50%{height: 0px}
+    100%{}
+}
+
+/*стили для неоновой надписи*/
+.neon{
+    width: 250px;
+    height: 50px;
+    background: #fff;
+    margin: 10px auto;
+    padding-top: 10px;
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+    font-size: 40px;
+    color: #F14133;
+    text-shadow: 0 0px 10px rgba(241,65,51,1);
+    animation-name: txt;
+    border: 1px solid #F14133;
+    border-radius: 7px;
+    box-shadow: 0 0px 10px rgba(241,65,51,1);
+}
+
+/*стили анимации для неоновой надписи*/
+.neon{
+    -webkit-animation-name: txt;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+}
+
+/*эффект мерцания*/
+@-webkit-keyframes txt{
+    0%{}
+    
+    30%{text-shadow: 0 0 10px rgba(241,65,51,1);}
+    30.001%{ text-shadow: 0 0 0px rgba(241,65,51,1);}
+    32%{text-shadow: 0 0 0px rgba(241,65,51,1);}
+    32.001%{text-shadow: 0 0 10px rgba(241,65,51,1);}
+    
+    70%{text-shadow: 0 0 10px rgba(241,65,51,1);}
+    70.001%{ text-shadow: 0 0 0px rgba(241,65,51,1);}
+    72%{text-shadow: 0 0 0px rgba(241,65,51,1);}
+    72.001%{text-shadow: 0 0 10px rgba(241,65,51,1);}
+    
+    78%{text-shadow: 0 0 10px rgba(241,65,51,1);}
+    78.001%{ text-shadow: 0 0 0px rgba(241,65,51,1);}
+    80%{text-shadow: 0 0 0px rgba(241,65,51,1);}
+    80.001%{text-shadow: 0 0 10px rgba(241,65,51,1);}
+    
+    100%{text-shadow: 0 0px 10px rgba(241,65,51,1);}
+}
+
